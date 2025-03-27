@@ -1,0 +1,33 @@
+{
+	"name": "local-semi-design",
+	"version": "0.1.0",
+	"private": true,
+	"workspaces": [
+		"app/*",
+		"packages/*",
+		"utils",
+		"components"
+	],
+	"scripts": {
+		"dev:merchant": "pnpm -F merchant-platform dev",
+		"build:merchant": "pnpm -F merchant-platform build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+	},
+	"dependencies": {
+		"@douyinfe/semi-ui": "^2.77.1"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.65",
+		"@types/react-dom": "^18.2.21",
+		"@typescript-eslint/eslint-plugin": "^7.3.1",
+		"@typescript-eslint/parser": "^7.3.1",
+		"eslint": "^8.57.0",
+		"eslint-plugin-react": "^7.34.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.6",
+		"typescript": "^5.4.2"
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	}
+}
