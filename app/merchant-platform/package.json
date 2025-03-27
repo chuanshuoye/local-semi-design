@@ -9,20 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@douyinfe/semi-icons-lab": "^2.77.1",
     "@douyinfe/semi-ui": "^2.77.1",
     "@local/request": "workspace:*",
+    "ahooks": "^3.7.10",
+    "axios": "^1.6.7",
+    "jotai": "^2.6.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3",
-    "jotai": "^2.6.5",
-    "ahooks": "^3.7.10",
-    "axios": "^1.6.7"
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
     "@vitejs/plugin-react": "^4.2.1",
+    "sass": "^1.86.0",
     "typescript": "^5.4.2",
     "vite": "^5.1.6"
   }
-} 
+}
