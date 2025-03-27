@@ -3,6 +3,7 @@ import { Layout } from '@douyinfe/semi-ui';
 import MainLayout from './layouts/MainLayout';
 import Dashboard from './pages/Dashboard';
 import MerchantList from './pages/MerchantList';
+import LoginAndRegisty from './pages/LoginAndRegisty';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/merchants" element={<MerchantList />} />
           {/* 其他路由可在此处添加 */}
         </Route>
+        <Route path="/login" element={<LoginAndRegisty />} />
       </Routes>
     </Layout>
   );

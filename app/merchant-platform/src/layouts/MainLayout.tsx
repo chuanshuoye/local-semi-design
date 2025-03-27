@@ -1,5 +1,5 @@
 import { Nav } from '@douyinfe/semi-ui';
-import { IconIntro, IconCheckbox, IconToast, IconCalendar } from '@douyinfe/semi-icons-lab';
+import { IconIntro, IconCheckbox, IconToast, IconCalendar, IconChangelog } from '@douyinfe/semi-icons-lab';
 import { IconHome, IconSetting, IconShoppingBag, IconSemiLogo } from '@douyinfe/semi-icons';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -18,6 +18,8 @@ const MainLayout = () => {
       setSelectedKeys(['merchants']);
     } else if (path === '/settings') {
       setSelectedKeys(['settings']);
+    } else if (path === '/login') {
+      setSelectedKeys(['login']);
     }
   }, [location]);
 
@@ -69,7 +71,8 @@ const MainLayout = () => {
           items={[
             { itemKey: 'dashboard', text: '首页', icon: <IconHome />, onClick: () => navigate('/') },
             { itemKey: 'merchants', text: '商户管理', icon: <IconShoppingBag />, onClick: () => navigate('/merchants') },
-            { itemKey: 'settings', text: '设置', icon: <IconSetting />, onClick: () => navigate('/settings') }
+            { itemKey: 'settings', text: '设置', icon: <IconSetting />, onClick: () => navigate('/settings') },
+            { itemKey: 'login', text: '登录', icon: <IconChangelog />, onClick: () => navigate('/login')}
           ]}
         />
         <div className={styles.content}>
